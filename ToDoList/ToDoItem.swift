@@ -10,11 +10,11 @@ import Foundation
 struct ToDoItem: Identifiable, Codable {
     let id: UUID
     var title: String
-    var isFinish: Bool
+    var isCompleted: Bool
     
-    init(title: String, isFinish: Bool) {
+    init(title: String, isCompleted: Bool) {
         self.id = UUID()
         self.title = title
-        self.isFinish = isFinish
+        self.isCompleted = isCompleted
     }
 }
